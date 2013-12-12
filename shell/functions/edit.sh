@@ -13,5 +13,10 @@ reload() {
 }
 
 edit() {
-  subl $1
+  if [[ -e $1 ]]; then
+    local FILE=$1
+  else
+    local FILE="."
+  fi
+  $EDITOR $FILE
 }
