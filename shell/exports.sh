@@ -1,4 +1,4 @@
-export GOPATH=~/dev/go
+export GOPATH=~/dev/digitalocean/go
 # export GOROOT=~/dev/go
 
 export EDITOR=subl

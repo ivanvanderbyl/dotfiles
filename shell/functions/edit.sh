@@ -18,5 +18,5 @@ edit() {
   else
     local FILE="."
   fi
-  $EDITOR $FILE
+  open $FILE -a 'Sublime Text'
 }
