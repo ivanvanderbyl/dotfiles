@@ -5,9 +5,9 @@ fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion
 
 # Config
 fresh-options --file
-  # fresh config/\*
+  fresh config/\*
   fresh jasoncodes/dotfiles config/inputrc
-  # fresh jasoncodes/dotfiles config/tmux.conf
+  fresh jasoncodes/dotfiles config/tmux.conf
 fresh-options
 fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
 
@@ -45,7 +45,18 @@ fresh shell/zsh/zsh-syntax-highlighting.zsh --file=~/.zshrc
 # fresh jasoncodes/dotfiles shell/aliases/\*
 # fresh jasoncodes/dotfiles shell/editor.sh
 # fresh jasoncodes/dotfiles shell/config/filters.sh
+fresh jasoncodes/dotfiles shell/config/tmux.sh
+# fresh jasoncodes/dotfiles shell/config/rbenv.sh
+
 
 fresh shell/exports.sh
+fresh shell/secrets.sh
 fresh shell/aliases/\*
 fresh shell/functions/\*
+
+# irb
+fresh-options --file=~/.irbrc
+  fresh config/irb/encoding.rb
+  # fresh jasoncodes/dotfiles config/irbrc
+  fresh config/irb/prompt.rb
+fresh-options
