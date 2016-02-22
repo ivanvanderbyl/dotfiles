@@ -50,7 +50,7 @@ fresh jasoncodes/dotfiles shell/config/tmux.sh
 
 
 fresh shell/exports.sh
-fresh shell/secrets.sh
+# fresh shell/secrets.sh
 fresh shell/aliases/\*
 fresh shell/functions/\*
 

@@ -31,4 +31,4 @@ SAVEHIST=1000000
 export REPORTTIME=4
 export TIMEFMT="%*Es total, %U user, %S system, %P cpu"
 
-eval "$($HOME/.flud/.flud/bin/flud init -)"
+eval "$($HOME/.flud/bin/flud init -)"
