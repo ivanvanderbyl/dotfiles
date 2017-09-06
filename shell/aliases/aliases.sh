@@ -13,4 +13,6 @@ alias dev="cd $HOME/dev"                      # go to the dev directory
 alias serve="python -m SimpleHTTPServer"
 alias ip='curl curlmyip.com'
 
-alias work="cd $HOME/dev/digitalocean"
+alias work="cd $HOME/dev/flood"
+
+alias fixclock="sudo ntpdate -u time.apple.com"

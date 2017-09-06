@@ -1,3 +1,27 @@
+source /usr/local/share/antigen/antigen.zsh
+
+export ZSH_THEME=""
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+# antigen bundle lein
+antigen bundle command-not-found
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen bundle mafredri/zsh-async
+antigen bundle sindresorhus/pure
+
+# Tell Antigen that you're done.
+antigen apply
+
 setopt no_beep                      # i hate beeps
 setopt interactive_comments         # escape commands so i can use them later (allow comments after commands)
 setopt rm_star_wait                 # if `rm *` wait 10 seconds before performing it!
@@ -32,3 +56,5 @@ export REPORTTIME=4
 export TIMEFMT="%*Es total, %U user, %S system, %P cpu"
 
 eval "$($HOME/.flud/bin/flud init -)"
+
+export ZSH_THEME=""
