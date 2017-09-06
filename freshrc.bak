@@ -1,0 +1,63 @@
+# handles updating fresh
+fresh freshshell/fresh bin/fresh --bin
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+# fresh freshshell/fresh-open bin/fresh-open --bin
+
+# Config
+fresh-options --file
+  fresh config/\*
+  fresh jasoncodes/dotfiles config/inputrc
+  fresh jasoncodes/dotfiles config/tmux.conf
+fresh-options
+fresh henrik/dotfiles rubyrc --file=~/.pryrc --filter='cat; echo include RubyRC'
+
+fresh-options --file=~/.zshrc --marker
+  # fresh freshshell/fresh contrib/source-build.sh
+  # fresh shell/sources.zsh
+  fresh shell/zsh/completion.zsh
+  fresh shell/zsh/prompt.zsh
+  fresh shell/zsh/title.zsh
+  fresh shell/zsh/aliases.zsh
+  fresh shell/zsh/zshrc
+  fresh shell/zsh/keybindings.zsh
+
+  # this loads the shell files and needs to be at the bottom of the zshrc for
+  # compdef be availiable
+  fresh freshshell/fresh contrib/source-build.sh
+
+  fresh rupa/z z.sh
+  # fresh sharat87/zsh-vim-mode zsh-vim-mode.plugin.zsh
+  fresh robbyrussell/oh-my-zsh lib/edit-command-line.zsh --ref=a38774c
+  fresh robbyrussell/oh-my-zsh plugins/git-flow/git-flow.plugin.zsh --ref=df30eae
+  fresh zsh-users/zsh-history-substring-search zsh-history-substring-search.zsh --ref=3bd84be
+fresh-options
+
+fresh zsh-users/zsh-completions src/_ack --file=completion/_ack
+fresh zsh-users/zsh-completions src/_heroku --file=completion/_heroku
+fresh robbyrussell/oh-my-zsh plugins/brew/_brew --file=completion/_brew --ref=55f09f8
+
+fresh zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting.zsh --file=vendor/zsh-syntax-highlighting.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/main/main-highlighter.zsh --file=vendor/highlighters/main/main-highlighter.zsh
+fresh zsh-users/zsh-syntax-highlighting highlighters/brackets/brackets-highlighter.zsh --file=vendor/highlighters/brackets/brackets-highlighter.zsh
+fresh shell/zsh/zsh-syntax-highlighting.zsh --file=~/.zshrc
+
+# Shell
+# fresh jasoncodes/dotfiles shell/aliases/\*
+# fresh jasoncodes/dotfiles shell/editor.sh
+# fresh jasoncodes/dotfiles shell/config/filters.sh
+fresh jasoncodes/dotfiles shell/config/tmux.sh
+# fresh jasoncodes/dotfiles shell/config/rbenv.sh
+
+
+fresh shell/exports.sh
+fresh shell/gcloud.sh
+# fresh shell/secrets.sh
+fresh shell/aliases/\*
+fresh shell/functions/\*
+
+# irb
+fresh-options --file=~/.irbrc
+  fresh config/irb/encoding.rb
+  # fresh jasoncodes/dotfiles config/irbrc
+  fresh config/irb/prompt.rb
+fresh-options
