@@ -5,6 +5,7 @@ export EDITOR=subl
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
 
 # Use Homebrew's directories rather than ~/.rbenv
 # export RBENV_ROOT=/usr/local/var/rbenv
@@ -28,3 +29,4 @@ export AWS_PROFILE="default"
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
