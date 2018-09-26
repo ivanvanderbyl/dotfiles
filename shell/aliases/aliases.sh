@@ -10,7 +10,6 @@ alias be="bundle exec"                        # run bundle
 
 alias dev="cd $HOME/dev"                      # go to the dev directory
 
-alias serve="python -m SimpleHTTPServer"
 alias ip='curl curlmyip.com'
 
 alias work="cd $HOME/dev/flood"
