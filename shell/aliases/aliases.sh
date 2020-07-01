@@ -10,7 +10,7 @@ alias be="bundle exec"                        # run bundle
 
 alias dev="cd $HOME/dev"                      # go to the dev directory
 
-alias ip='curl curlmyip.com'
+alias myip='curl https://www.zx2c4.com/ip'
 
 alias work="cd $HOME/dev/flood"
 
