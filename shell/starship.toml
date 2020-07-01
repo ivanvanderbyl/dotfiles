@@ -1,0 +1,20 @@
+# Replace the "❯" symbol in the prompt with "➜"
+# [character]      # The name of the module we are configuring is "character"
+# symbol = "➜"     # The "symbol" segment is being set to "➜"
+
+[aws]
+style = "bold blue"
+symbol = "🅰 "
+disabled = true
+
+[cmd_duration]
+min_time = 1
+prefix = "underwent "
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = "4"
+truncation_symbol = ""
+
+[directory]
+truncate_to_repo = true
