@@ -3,14 +3,19 @@ fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 
 fresh-options --file=~/.zshrc --marker
-  fresh shell/zsh/completion.zsh
-  # fresh shell/zsh/aliases.zsh
+  # fresh shell/zsh/completion.zsh
   fresh shell/zsh/zshrc
-  fresh shell/zsh/keybindings.zsh
+  fresh shell/zsh/aliases.zsh
+
+  # fresh shell/zsh/keybindings.zsh
 
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
   fresh freshshell/fresh contrib/source-build.sh
+fresh-options
+
+fresh-options --file=~/.config/starship.toml --marker
+  fresh shell/starship.toml
 fresh-options
 
 fresh shell/aliases/\*
