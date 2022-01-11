@@ -3,11 +3,11 @@ fresh freshshell/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 
 fresh-options --file=~/.zshrc --marker
-  # fresh shell/zsh/completion.zsh
+  fresh shell/zsh/completion.zsh
   fresh shell/zsh/zshrc
   fresh shell/zsh/aliases.zsh
 
-  # fresh shell/zsh/keybindings.zsh
+  fresh shell/zsh/keybindings.zsh
 
   # this loads the shell files and needs to be at the bottom of the zshrc for
   # compdef be availiable
@@ -24,10 +24,10 @@ fresh shell/functions/\*
 fresh shell/exports.sh
 fresh shell/gcloud.sh
 fresh shell/secrets.sh
-fresh shell/rbenv.zsh
+# fresh shell/rbenv.zsh
 
 # irb
-fresh-options --file=~/.irbrc
-  fresh config/irb/encoding.rb
-  fresh config/irb/prompt.rb
-fresh-options
+# fresh-options --file=~/.irbrc
+#   fresh config/irb/encoding.rb
+#   fresh config/irb/prompt.rb
+# fresh-options

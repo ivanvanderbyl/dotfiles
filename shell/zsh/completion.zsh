@@ -1,6 +1,6 @@
 fpath=(~/.fresh/build/completion $fpath)
 
-autoload -U compinit; compinit
+# autoload -U compinit; compinit
 
 # group matches and describe groups
 zstyle ':completion:*' special-dirs true
@@ -27,5 +27,5 @@ zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-dir
 # case-insensitive (all), partial-word and then substring completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-compinit -i
+# compinit -i
 zmodload -i zsh/complist

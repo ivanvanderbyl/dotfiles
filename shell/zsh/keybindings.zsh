@@ -12,3 +12,6 @@ bindkey -M menuselect '^o' accept-and-infer-next-history
 
 # handy for renaming files
 bindkey "^[m" copy-prev-shell-word
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward

@@ -2,14 +2,14 @@
 # [character]      # The name of the module we are configuring is "character"
 # symbol = "➜"     # The "symbol" segment is being set to "➜"
 
-[aws]
-style = "bold blue"
-symbol = "🅰 "
-disabled = true
+# [aws]
+# disabled = true
+# style = "bold blue"
+# symbol = "🅰 "
 
-[cmd_duration]
-min_time = 1
-prefix = "underwent "
+# [cmd_duration]
+# min_time = 1
+# prefix = "underwent "
 
 [git_branch]
 symbol = "🌱 "
